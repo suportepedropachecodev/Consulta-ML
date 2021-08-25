@@ -1,0 +1,53 @@
+{
+  "name": "Consulta-ML",
+  "version": "1.0.0",
+  "description": "App que extrai consulta do Mercado Livre e converte em arquivo .csv",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "watch": "nodemon --exec electron .",
+    "publica:linux":"sudo electron-builder -l",
+    "publica:win":"electron-builder -w"
+  },
+  "build":{
+    "linux":{
+      "target":[
+        "zip",
+        "deb"
+      ],
+      "category":"settings"
+    },
+    "win":{
+      "target":"nsis"
+    }
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suportepedropachecodev/Consulta-ML.git"
+  },
+  "keywords": [],
+  "author": "Pedro Pacheco DEV<contato@pedropachecodev.com.br>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suportepedropachecodev/Consulta-ML/issues"
+  },
+  "linux":{
+    "category":"Utility",
+    "synopsis":"Consulta a produtos do mercado livre em .csv",
+    "target":[
+      "AppImage"
+    ]
+  },
+  "homepage": "https://github.com/suportepedropachecodev/Consulta-ML#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bootstrap": "^5.1.0",
+    "objects-to-csv": "^1.3.6"
+  },
+  "devDependencies": {
+    "electron": "^13.2.2",
+    "electron-builder": "^22.11.7"
+  }
+}

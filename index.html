@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Consulta Mercado Livre</title>
+</head>
+
+<body>
+    <div class="d-flex align-items-center flex-column justify-content-center h-100 ">
+        <h1 class="display-4">Consulta Mercado Livre </h1>
+        <form id="formulario">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Digite a sua pesquisa" id="consulta"
+                    placeholder="Recipient's username" aria-label="Recipient's username"
+                    aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary btn-warning" type="submit">Buscar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="./renderer.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
